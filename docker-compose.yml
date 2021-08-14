@@ -33,6 +33,8 @@ x-app: &app
   depends_on:
     - postgres
     - redis
+  tty: true
+  stdin_open: true 
 
 services:
   postgres:
